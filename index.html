@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web portofolio tailwind">
+    <meta name="keyword" content="tailwindcss, CSS, tailwind">
+    <meta name="author" content="Muhammad Dzurrafiq H">
     <title>My Portofolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>	
+        .gradient 
+        {
+           background-image: linear-gradient(to bottom right, #4C51BF , #702459 );
+        }
+    </style>
 </head>
 <body>
 
@@ -44,7 +53,7 @@
         </nav>
     </section>
 
-    <section class="w-screen mx-auto py-4 bg-indigo-700" >
+    <section class="w-screen mx-auto py-4 gradient" >
         <div class="px-16 py-8 text-white text-center">
                 <h1 class="w-full text-7xl font-bold ">About me</h1>
                 <div class="mb-4">
@@ -62,15 +71,79 @@
                     </div>
                 </div>
         </div>
-         <div class="grid grid-cols-1 md:grid-cols-3 bg-white m-16 rounded-lg"> <!-- Setting keperluan jumlah column -->
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-pink-500 m-3">
+         <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 px-8 m-16 rounded-lg"> <!-- Setting keperluan jumlah column -->
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
 
+                    <p class="text-gray-600 text-base mb-2">HTML</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    
+                    <p class="text-gray-600 text-base mb-2">CSS</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">Javascript</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">PHP</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        View Portofolio
+                    </button>
+                </div>
             </div>
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-blue-500 m-3">
 
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-briefcase text-red-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Working Experience</p>
+
+                    <p class="text-gray-600 text-base mb-2">Staff TU/p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">Programming</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">Teknisi</p>
+                    <hr class="text-gray-600 mb-2">
+
+                    <p class="text-gray-600 text-base mb-2">Instructor</p>
+                    <hr class="text-gray-600 mb-2">
+                
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        View Portofolio
+                    </button>
+                </div>
             </div>
-            <div class="max-w-sm shadow-lg px-4 py-4 bg-green-500 m-3">
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-building text-gray-500 fa-5x mb-6"></i>
+                <div class="p-4">
+                    <p class="font-bold text-lg md:text-xl mb-6">Course</p>
 
+                    <p class="text-gray-600 text-base mb-2">Desain Grafis</p>
+                    <hr class="text-gray-600 mb-2">
+
+                    <p class="text-gray-600 text-base mb-2">Data Analis</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">Frontend</p>
+                    <hr class="text-gray-600 mb-2">
+                    
+                    <p class="text-gray-600 text-base mb-2">ITSupport</p>
+                    <hr class="text-gray-600 mb-2">
+                
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        View Portofolio
+                    </button>
+                </div>
             </div>
         </div>
     </section>
