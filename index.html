@@ -10,15 +10,20 @@
     <script src="https://cdn.tailwindcss.com"></script>    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <style>	
-        .gradient 
-        {
+        .gradient {
            background-image: linear-gradient(to bottom right, #4C51BF , #702459 );
+        }
+        .gradient-skill {
+            background-image: linear-gradient(#FC8181, #FED7D7);
+        }
+        .gradient-bottom {
+            background-image: linear-gradient(#4C51BF, #702459);
         }
     </style>
 </head>
 <body>
 
-    <section class="w-screen mx-auto px-4" >
+    <section id="header" class="w-screen mx-auto px-4" >
         <nav class="flex flex-wrap p-6 justify-between">
             <div class="flex flex-shrink-0 mr-6">
                 <img src="image/about.JPG" alt="" class="h-10 w-50 mr-2 shadow-lg rounded-full max-w-full mx-auto"> 
@@ -34,10 +39,10 @@
                     <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
                         About me
                     </a>
-                    <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
-                        Resent work
+                    <a href="#job-experience" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                        Job Experience
                     </a>
-                    <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                    <a href="#skill-me" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
                         Skill
                     </a>
                     <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
@@ -45,7 +50,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparant hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
+                    <a href="#contact" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparant hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
                         Contact me 
                     </a>
                 </div>
@@ -53,7 +58,7 @@
         </nav>
     </section>
 
-    <section class="w-screen mx-auto py-4 gradient" >
+    <section id="about" class="w-screen mx-auto py-4 gradient" >
         <div class="px-16 py-8 text-white text-center">
                 <h1 class="w-full text-7xl font-bold ">About me</h1>
                 <div class="mb-4">
@@ -148,17 +153,157 @@
         </div>
     </section>
 
-    <section class="w-screen mx-auto px-4 bg-white h-32">
-        Skill
+    <section id="skill-me" class="container mx-auto py-4 bg-white px-4">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+                <img src="image/img-skill.jpg" alt="" class="max-w-full rounded-lg shadow-lg">
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill me</h1>
+                    <div class="mb-4">
+                        <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 mx-0 rounded"></div>
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Berikut adalah item dan skala keahlian saya :
+                    </p>
+                    <ul class="list-none mt-4">
+                        <li class="grid grid-cols-2 py-2">
+                           <p class="text-lg text-gray-600">Microsoft Office</p>
+                           <div class="gradient-skill w-7/8"></div>
+                        </li>
+                       <li class="grid grid-cols-2 py-2">
+                           <p class="text-lg text-gray-600">Adobe Photoshop</p>
+                           <div class="gradient-skill w-3/4"></div>
+                       </li>
+                       <li class="grid grid-cols-2 py-2">
+                           <p class="text-lg text-gray-600">HTML, CSS & Javascript</p>
+                           <div class="gradient-skill w-2/3"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                          <p class="text-lg text-gray-600">PHP</p>
+                          <div class="gradient-skill w-1/2"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                          <p class="text-lg text-gray-600">Bootstrap</p>
+                          <div class="gradient-skill w-1/2"></div>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="w-screen mx-auto px-4 bg-gray-300 h-32">
-        Job Experience
+    <section id="job-experience" class="container mx-auto py-8 bg-white">
+        <div class="text-center mb-8">
+            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">Job Experience</h1>
+            <div class="mb-4">
+                <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded">
+                </div>
+            </div>
+            <p class="text-lg m-4 text-gray-600">Berikut adalah Pengalaman kerja Saya : </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 m-8">
+                <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="image/img1.jpg" alt="" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Pengelola Pajak Masuk (Internship)</p>
+                        <p class="text-gray-700 text-base">Magang pada SAMSAT Banjarmasin dibagian Bea Balik dan Nama dan Mutasi Kendaraan Bermotor
+                        </p>
+                     </div>
+                     <div class="px-2 py-4 text-center">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">
+                                Detail
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="image/its.jpg" alt="" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">IT Support</p>
+                        <p class="text-gray-700 text-base">Melakukan maintenance komputer/laptop (Installasi OS dan Software Aplikasi Pendukung dan Repair Perangkat Bermasalah pada Software dan Hardware)
+                        </p>
+                     </div>
+                     <div class="px-2 py-4 text-center">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">
+                                Detail
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="image/si.jpg" alt="" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Staff Tata Usaha</p>
+                        <p class="text-gray-700 text-base">Pengeloaan sistem informasi, Penata Usahaan Administrasi dan Penata Usahaan Database Peserta Didik dan Alumni <br><br>
+                        </p>
+                     </div>
+                     <div class="px-2 py-4 text-center">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">
+                                Detail
+                        </button>
+                      </div>
+                </div>
+                <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                    <img src="image/img1.jpg" alt="" class="w-full rounded-lg">
+                    <div class="px-2 py-2 text-center">
+                        <p class="font-bold text-xl mb-2 text-gray-700">Instruktur Kursus</p>
+                        <p class="text-gray-700 text-base">Pembelajaran/kursus mengenai aplikasi microsoft office word dan microsoft office excel <br><br><br>
+                        </p>
+                     </div>
+                     <div class="px-2 py-4 text-center">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">
+                                Detail
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="w-screen mx-auto px-4 bg-indigo-700 h-32">
-        Contact Me
+    <section id="contact" class="w-screen mx-auto py-4 gradient-bottom">
+        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact me</h1>
+        <div class="mb-4">
+            <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
+        </div>
+        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto">
+            <form action="" method="post" class="p-5 lg:p-10 text-center">
+                <h4 class="text-2xl font-semibold">Wanto to contact me</h4>
+                <p class="mt-1 mb-4 text-gray-500">
+                    Please send your message
+                </p>
+                <div class="w-full mb-4 mt-8">
+                    <label for="" class="uppercase text-gray-600 text-xs font-bold">Nama lengkap</label>
+                    <input type="text" class="mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Nama lengkap">
+                </div>
+
+                <div class="w-full mb-4 mt-4">
+                    <label for="" class="uppercase text-gray-600 text-xs font-bold">Email</label>
+                    <input type="text" class="mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Email">
+                </div>
+
+                <div class="w-full mb-4 mt-4">
+                    <label for="" class="uppercase text-gray-600 text-xs font-bold">Message</label>
+                    <textarea rows="4" cols="80" class="mt-2 px-3 py-3 placeholder-gray-400 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Tuliskan pesan anda"></textarea>
+                </div>
+
+                <div class="mt-6">
+                    <button class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg" type="button">Send</button>
+                </div>
+            </form>
+        </div>
     </section>
-    <section class="w-screen mx-auto px-4 bg-white h-32">
-        Footer
+    <section id="footer" class="w-screen mx-auto py-4 bg-white mt-4 mb-4">
+        <div class="text-center">
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-indigo-700 hover:text-indigo-900 p-2">
+                <i class="fa-2x fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="text-center mt-4 text-gray-600">
+            Desain with Tailwindcss by Rafiq
+        </div>
     </section>
 </body>
 </html>
